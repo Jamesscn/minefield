@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Minefield.exe" version="1.0.0.1" publicKeyToken="a47266222c37b8e6" language="en" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="minefield.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Minefield" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Minefield.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Minefield.exe" size="358872">
+      <assemblyIdentity name="Minefield" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>cobQayTLPCHxcouE+uWVcg5YppeZ/Ks/M8tgNpG0Muo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Minefield.exe.config" size="1896">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oxkXvJF/rZNFmvXbLdA3pGWDqubHneZVUhDJHJINUus=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="minefield.ico" size="40605">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HV9gUjY52zm4D5lCJGvDrHCUjSvrnOqVjg550ATA9X4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on and is
+           is designed to work with. Uncomment the appropriate elements and Windows will 
+           automatically selected the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Jamesscn-Win7\James" issuerKeyHash="d34f23757e6d5032ab5d7d838945779ef9824859" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>TjHX/vCqV1SvefRi2lvS3LEz76M5huRn5nkkHk/sgIc=</DigestValue></Reference></SignedInfo><SignatureValue>6Hasck+ki8uxbD+3zSlIC8/c1HlFlZ046NaFnV/fhJmCZv7r0V/t+Eno9PvnDMsEydW7RFaJQBGsYMKNSuBtFIeiwM62y2+JxqzSp2PHcy492q76dPlV8+WFfNE8/uS40kh9mISwuI6nl15uprYnmoR4o3a+15iXHl0C6CSftHs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>7EtvaDIHDSkIp8QBB93LU7rxyEp3NYXTucec0JaJB1SlDD/+kUb0fv8jIsEq9mqSQ5lD5WpwoBqXY2WkXRhJO7hjPU2xYxCnM30KtpdnOVPQ4ljo8zByYODx77oC5wDppeADEf84chjT2MP61LMSxz/xYqERj6MalzUfSmjWCVk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8780ec4f1e2479e667e48639a3ef33b1dcd25bda62f479af5457aaf0fed7314e" Description="" Url=""><as:assemblyIdentity name="Minefield.exe" version="1.0.0.1" publicKeyToken="a47266222c37b8e6" language="en" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Jamesscn-Win7\James</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>PxLKlhsLsV6GVs1NVCgOGQQERjNwlpsqNF2ztmAkeTc=</DigestValue></Reference></SignedInfo><SignatureValue>EHb6ikV2lrNwdrQFXGM8DawT4pvgh01L2DVtDs/3mib9T75etfNbhSFOIT4l6jobMVgbrJShzr5yePsRwnGsQPZ6+q66O+QQvg1atCcoDUZSQhBqSjfRkRmom8/DWOEj2UCY5ICUm6cg8w3Fhx+4GDBs+lQt17tSJkSdH/Bdj6E=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>7EtvaDIHDSkIp8QBB93LU7rxyEp3NYXTucec0JaJB1SlDD/+kUb0fv8jIsEq9mqSQ5lD5WpwoBqXY2WkXRhJO7hjPU2xYxCnM30KtpdnOVPQ4ljo8zByYODx77oC5wDppeADEf84chjT2MP61LMSxz/xYqERj6MalzUfSmjWCVk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQUSASLl0fm6FHrCtYBk70pDANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYASgBhAG0AZQBzAHMAYwBuAC0AVwBpAG4ANwBcAEoAYQBtAGUAczAeFw0xNjAxMzEwMDQzNDlaFw0xNzAxMzAwNjQzNDlaMDExLzAtBgNVBAMeJgBKAGEAbQBlAHMAcwBjAG4ALQBXAGkAbgA3AFwASgBhAG0AZQBzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDsS29oMgcNKQinxAEH3ctTuvHISnc1hdO5x5zQlokHVKUMP/6RRvR+/yMiwSr2apJDmUPlanCgGpdjZaRdGEk7uGM9TbFjEKczfQq2l2c5U9DiWOjzMHJg4PHvugLnAOml4AMR/zhyGNPYw/rUsxLHP/FioRGPoxqXNR9KaNYJWQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAC+MSF+EAYtiFTYUdLkqwcquqGd0vdL3ULAdUGJu8R0H2Ay4+KrJICnHvJIeqNPNpF7wy3WQuXS/jRRmJe6aOk4iU0+CRUy/kBfKqh2oKE5RpgL3l1O6nimpGTwWh2jDdDRBwZHjQZ4oo1BDP5I4mdmlxVhp2/AXvcIcqn+8CgyM</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
